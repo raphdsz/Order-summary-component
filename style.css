@@ -1,0 +1,152 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    background-color: white;
+    min-width: 330px;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;    
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    gap: 25px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+}
+
+p{
+    font-size: 18px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.plan-container{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.icon-music{
+    width: 50px;
+    height: 50px;
+}
+
+a{
+    margin-left: auto;
+    font-weight: 700;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+.primary-btn{
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color:white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 30px hsla(245, 75%, 52%,.4);
+    z-index: 1;
+}
+
+.primary-btn:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.secondary-btn{
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color:hsl(224, 23%, 55%);
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.secondary-btn:hover{
+    color:hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:450px){
+    .card{
+        width: 90vw;    
+    }
+    .card-content{
+        padding:25px;
+        gap:20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        padding: 0;
+    }
+    .plan-text > p{
+        margin-left: 20px;
+    }
+    a{
+        font-size: 14px;
+        float: right;
+    }
+    
+    .primary-btn{
+        font-size: 14px;
+    }
+    .secondary-btn{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .card{
+        top: 0;
+        left: 0;
+        margin-right: 0;
+        transform: translate(0, 0) ;
+        background-color: white;
+        min-width: 330px;
+
+    }
+    
+}
